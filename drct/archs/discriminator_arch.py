@@ -4,7 +4,7 @@ from torch.nn import functional as F
 from torch.nn.utils import spectral_norm
 
 
-@ARCH_REGISTRY.register()
+@ARCH_REGISTRY.register(suffix="drct")
 class UNetDiscriminatorSN(nn.Module):
     """Defines a U-Net discriminator with spectral normalization (SN)
 

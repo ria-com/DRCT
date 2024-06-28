@@ -12,7 +12,7 @@ from basicsr.utils.color_util import rgb2ycbcr
 from basicsr.utils.registry import DATASET_REGISTRY
 
 
-@DATASET_REGISTRY.register()
+@DATASET_REGISTRY.register(suffix="drct")
 class ImageNetPairedDataset(data.Dataset):
     
     def __init__(self, opt):

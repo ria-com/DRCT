@@ -3,7 +3,7 @@ from torch import nn as nn
 from torch.nn import functional as F
 
 
-@ARCH_REGISTRY.register()
+@ARCH_REGISTRY.register(suffix="drct")
 class SRVGGNetCompact(nn.Module):
     """A compact VGG-style network structure for super-resolution.
 
